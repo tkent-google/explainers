@@ -32,7 +32,7 @@ The quick brown fox jumps over the lazy dog.
 </textarea>
 </div>
 ```
-
+<img src="form-sizing-on.png" style="width:242px">
 
 If `form-sizing: normal` is specified, the following two `<textarea>` elements will have different sizes.
 They are minimum sizes which fit to their content.
@@ -47,6 +47,7 @@ The quick brown fox jumps over the lazy dog.
 </textarea>
 </div>
 ```
+<img src="form-sizing-off.png" style="width:244px">
 
 ## Links
 
