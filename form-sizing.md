@@ -10,12 +10,12 @@ the amount of the entered text, even if its sizing CSS property is set to `auto`
 
 ## Solution
 
-We propose a new CSS property called `form-sizing` to disable this behavior that is unique to form controls.
+We propose a new CSS property called `field-sizing` to disable this behavior that is unique to form controls.
 
-`form-sizing: fixed;`
+`field-sizing: fixed;`
 The default value. Maintains the current behavior.
 
-`form-sizing: content;`
+`field-sizing: content;`
 Disables the form control's behavior of retaining a constant size, allowing size determination to be based on the content.
 
 ## Examples
@@ -32,22 +32,22 @@ The quick brown fox jumps over the lazy dog.
 </textarea>
 </div>
 ```
-<img src="form-sizing-on.png" style="width:242px">
+<img src="field-sizing-on.png" style="width:242px">
 
-If `form-sizing: content` is specified, the following two `<textarea>` elements will have different sizes.
+If `field-sizing: content` is specified, the following two `<textarea>` elements will have different sizes.
 They are minimum sizes which fit to their content.
 
 ```html
 <div style="width:11em; background:yellow; padding:4px;">
-<textarea style="form-sizing:content;">
+<textarea style="field-sizing:content;">
 </textarea>
 <br>
-<textarea style="form-sizing:content;">>
+<textarea style="field-sizing:content;">>
 The quick brown fox jumps over the lazy dog.
 </textarea>
 </div>
 ```
-<img src="form-sizing-off.png" style="width:244px">
+<img src="field-sizing-off.png" style="width:244px">
 
 ## Links
 
