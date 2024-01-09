@@ -49,6 +49,23 @@ The quick brown fox jumps over the lazy dog.
 ```
 <img src="form-sizing-off.png" style="width:244px">
 
+## Considered Alternatives
+
+* Managed by HTML content attributes; e.g. `<textarea rows="auto" maxrows="10">`<br>
+  We should not add new behavior to existing presentation attributes, and should not add new presentation attributes.<br>
+  https://github.com/whatwg/html/issues/6807#issuecomment-1115141059
+  
+* Expand the meaning of `min-content` `max-content` keywords for `width` `height` properties<br>
+  It will have a compatibility risk, and it's hard to detect the feature because of no new properties/keywords.<br>
+  https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1198807010<br>
+  https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1200526721
+
+* Add a new keyword for `width` `height` properteis; e.g. `height: max-input;`<br>
+  We won't be able to apply other keywords to a form control with `height: max-input;`.<br>
+  https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1535228386
+
+Conslusion: Adding new property to disable the current sizing behavior of form controls would be the simplest and the safest.
+
 ## Links
 
 * HTML issue: https://github.com/whatwg/html/issues/6807
