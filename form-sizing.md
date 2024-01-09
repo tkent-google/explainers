@@ -49,6 +49,19 @@ The quick brown fox jumps over the lazy dog.
 ```
 <img src="form-sizing-off.png" style="width:244px">
 
+## Coverage
+
+We suppose the `field-sizing` property is applied to the following elements:
+* `<textarea>`
+* Text-field `<input>`
+* `<input type=number>`
+* `<input type=file>`<br>
+  The control width will depend on a selected file name if `field-sizing: content` is specified.
+* List box `<select>`<br>
+  The control height will depend on the sum of `<option>` label heights if `field-sizing: content` is specified.
+* Drop-down box `<select>`<br>
+  THe control width will dpeend on the width of the selected `<option>` label if `field-sizing: content` is specified.
+
 ## Considered Alternatives
 
 * Managed by HTML content attributes; e.g. `<textarea rows="auto" maxrows="10">`<br>
