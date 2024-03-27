@@ -42,7 +42,7 @@ They are minimum sizes which fit to their content.
 <textarea style="field-sizing:content;">
 </textarea>
 <br>
-<textarea style="field-sizing:content;">>
+<textarea style="field-sizing:content;">
 The quick brown fox jumps over the lazy dog.
 </textarea>
 </div>
@@ -60,7 +60,7 @@ We suppose the `field-sizing` property is applied to the following elements:
 * List box `<select>`<br>
   The control height will depend on the sum of `<option>` label heights if `field-sizing: content` is specified.
 * Drop-down box `<select>`<br>
-  THe control width will dpeend on the width of the selected `<option>` label if `field-sizing: content` is specified.
+  The control width will depend on the width of the selected `<option>` label if `field-sizing: content` is specified.
 
 ## Considered Alternatives
 
@@ -73,11 +73,11 @@ We suppose the `field-sizing` property is applied to the following elements:
   https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1198807010<br>
   https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1200526721
 
-* Add a new keyword for `width` `height` properteis; e.g. `height: max-input;`<br>
+* Add a new keyword for `width` `height` properties; e.g. `height: max-input;`<br>
   We won't be able to apply other keywords to a form control with `height: max-input;`.<br>
   https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1535228386
 
-Conslusion: Adding new property to disable the current sizing behavior of form controls would be the simplest and the safest.
+Conclusion: Adding new property to disable the current sizing behavior of form controls would be the simplest and the safest.
 
 ## Links
 
